@@ -1,12 +1,12 @@
 Lab Project 1: Building a Tokenizer
 ===================================
-Due Date: Friday October 5th, 2018
+Due Date: Friday October 5th, 2018 11:59 PM MST
 
-Overview
-========
+All work should be your own work. Please see the [Course Website](https://sites.google.com/site/arch1utep/home#TOC-Academic-Honesty) for full details on the course's policy on academic honesty.
 
-#### 
+Your source code should be pushed to your private Github repository prior to the deadline. _Your repository should be clean and not cluttered with any temporary scratch files (e.g. hello.c~ or #hello.c#)._
 
+## Overview
 Your objective for the first lab project is to build a tokenizer that
 maintains a history. Tokenizing is the process of dividing a string into
 tokens by some delimeter (e.g. the string librarys split() function).
@@ -31,8 +31,7 @@ A user should be able to view and recall a certain history item by using a comma
 similar to ’!2’. This would then use the string “But it was delicious.” as input and
 tokenize.
 
-1 Building a Simple UI
-====================
+## Building a Simple UI
 The first milestone for your project is to complete a simple functioning
 user interface (which means it does not have to be anything fancy). It
 should have an indicator on the left to notify the user that the program
@@ -50,8 +49,7 @@ $ my fancy interface thing
 my fancy interface thing
 ```
 
-2 Working with Strings
-====================
+## Working with Strings
 At this point, you will be provided with a repository containing two
 header files, **tokenizer.h** and **history.h**. You should explore the
 contents of each file so that you are familiar with the instructions to
@@ -73,8 +71,7 @@ find helpful comments explaining the purpose of each function. Lastly,
 you are not allowed to use any libraries except for stdio.h and stdlib.h
 in your source code (this includes string.h).
 
-3 Dealing with Memory Allocation
-==============================
+## Dealing with Memory Allocation
 The third milestone of your project will require you to allocate and
 free memory. Going back to the **tokenizer.h** file, you are now going
 to define the following functions:
@@ -85,8 +82,7 @@ to define the following functions:
 To test your functions, you should hardcode the allocation of an array
 of strings (char\*\*).
 
-4 Putting it All Together
-=======================
+## Putting it All Together
 Now that you have all the pieces for the tokenizer defined, the last
 part is to put them together and define the tokenizer:
 
@@ -97,14 +93,18 @@ of characters as input and return an array of tokens. It is important to
 understand that you must determine the amount of tokens prior to
 allocating space for the array, and similarly with each token.
 
-5 Maintaining History
-===================
+## Maintaining History
 The final milestone of the project is to build the history component.
 The history can be represented as a linked list data structure, with
 each node containing:
 
-1.  the string entered by user
-2.  the length of string
-3.  the sequence number
+1.  an id based on its place in the list,
+2.  the string entered by user,
+3.  and, a pointer to the next node.
 
-As mentioned in the overview, a user should be able to view the history and recall certain history items.
+Inside the **history.h** header file you will find two struct declarations representing this notion. As mentioned in the overview, a user should be able to: 
+
+1. view the history of strings entered by the user 
+2. and recall and tokenize a certain history item by command.
+
+You should define each function inside the **history.h** header file and then incorporate the history into your tokenizer and interface.
