@@ -1,5 +1,5 @@
 #ifndef _TOKENIZER_
-#define TOKENIZER
+#define _TOKENIZER_
 
 /* Count the number of characters in the string argument. */
 int string_length(char*);
