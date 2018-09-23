@@ -1,10 +1,25 @@
 Lab Project 1: Building a Tokenizer
 ===================================
-Due Date: Friday October 5th, 2018 11:59 PM MST
+Tentative Due Date: Friday October 5th, 2018 11:59 PM MST
 
 All work should be your own work. Please see the [Course Website](https://sites.google.com/site/arch1utep/home#TOC-Academic-Honesty) for full details on the course's policy on academic honesty.
 
-Your source code should be pushed to your private Github repository prior to the deadline. _Your repository should be clean and not cluttered with any temporary scratch files (e.g. hello.c~ or #hello.c#)._
+The following should be pushed to your private Github repository prior to the deadline.:
+- All .c and .h source files
+- A Makefile to build and clean your project
+- A brief README explaining how to use your program
+
+_Your repository should be clean and not cluttered with any temporary scratch files (e.g. hello.c~ or #hello.c#)._
+
+You will demo your lab to the TA during the following week.  Expect to be asked to checkout your project from your repository, compile it, and explain how your code works.  Your will be evaluated based on the following criteria:
+
+- Tools (efficiently utilize bash, emacs, make, the compiler, and git)
+- Written Communication (appropriate documentation)
+- Mature Programming (proper code hygiene, appropriate algorithms, modularization, header files)
+- Variable Allocation (appropriate use of variables, scope, allocation)
+- Completion
+
+You may refer to the [Grading and Course Learning Outcomes webpage](https://sites.google.com/site/arch1utep/course-learning-outcomes) for an in depth explanation of the grading criteria.
 
 ## Overview
 Your objective for the first lab project is to build a tokenizer that
@@ -105,6 +120,6 @@ each node containing:
 Inside the **history.h** header file you will find two struct declarations representing this notion. As mentioned in the overview, a user should be able to: 
 
 1. view the history of strings entered by the user 
-2. and recall and tokenize a certain history item by command.
+2. and recall a certain history item by command (refer to overview for an example).
 
 You should define each function inside the **history.h** header file and then incorporate the history into your tokenizer and interface.
