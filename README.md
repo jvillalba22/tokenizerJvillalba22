@@ -11,11 +11,15 @@ The following should be pushed to your private Github repository prior to the de
 
 _Your repository should be clean and not cluttered with any temporary scratch files (e.g. hello.c~ or #hello.c#)._
 
-You will demo your lab to the TA during the following week.  Expect to be asked to checkout your project from your repository, compile it, and explain how your code works.  Your will be evaluated based on the following criteria:
+You will be evaluated based on the following criteria:
 
 - Tools (efficiently utilize bash, emacs, make, the compiler, and git)
 - Written Communication (appropriate documentation)
-- Mature Programming (proper code hygiene, appropriate algorithms, modularization, header files)
+- Mature Programming 
+  - proper code hygiene (i.e expressive variable, function, and struct names)
+  - appropriate algorithms
+  - modularization
+  - header files
 - Variable Allocation (appropriate use of variables, scope, allocation)
 - Completion
 
