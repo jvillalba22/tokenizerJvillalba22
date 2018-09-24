@@ -121,9 +121,11 @@ each node containing:
 2.  the string entered by user,
 3.  and, a pointer to the next node.
 
-Inside the **history.h** header file you will find two struct declarations representing this notion. As mentioned in the overview, a user should be able to: 
+Inside the **history.h** header file you will find two struct declarations representing this notion. 
+
+Overall, a user should be able to: 
 
 1. view the history of strings entered by the user 
-2. and recall a certain history item by command (refer to overview for an example).
+2. and recall a certain history item by using the command `!3` (i.e. an exclamation directly followed by the sequence number).
 
-You should define each function inside the **history.h** header file and then incorporate the history into your tokenizer and interface.
+You should define each function inside the **history.h** header file and then incorporate the history with your tokenizer and interface.
