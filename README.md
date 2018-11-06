@@ -1,7 +1,5 @@
 Lab Project 1: Building a Tokenizer
 ===================================
-Tentative Due Date: Friday October 5th, 2018 11:59 PM MST
-
 All work should be your own work. Please see the [Course Website](https://sites.google.com/site/arch1utep/home#TOC-Academic-Honesty) for full details on the course's policy on academic honesty.
 
 The following should be pushed to your private Github repository prior to the deadline.:
@@ -69,8 +67,8 @@ my fancy interface thing
 ```
 
 ## Working with Strings
-At this point, you will be provided with a repository containing two
-header files, **tokenizer.h** and **history.h**. You should explore the
+Inside this repository there are two header files, **tokenizer.h** and **history.h**, 
+that declare the functions your project will define. You should explore the
 contents of each file so that you are familiar with the instructions to
 follow.
 
@@ -79,16 +77,17 @@ functions contained in the tokenizer.h file:
 
 1.  `int string_length(char*);`
 2.  `char is_valid_character(char c);`
-3.  `int find_word_start(char*, int);`
-4.  `int find_word_end(char*, int);`
+3.  `int find_word_start(char*);`
+4.  `int find_word_end(char*);`
 5.  `int count_words(char*);`
 
 Each function definition should appropriately use the arguments and
 return the correct type declared in the method signature. **You should
 not modify these method signatures.** Inside the header file you will
-find helpful comments explaining the purpose of each function. Lastly,
-you are not allowed to use any libraries except for stdio.h and stdlib.h
-in your source code (this includes string.h).
+find helpful comments explaining the purpose of each function. 
+
+Lastly, you are **not allowed to use any libraries except stdio.h and stdlib.h**
+in your source code.
 
 ## Dealing with Memory Allocation
 The third milestone of your project will require you to allocate and
