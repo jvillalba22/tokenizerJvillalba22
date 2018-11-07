@@ -11,20 +11,18 @@ int string_length(char* str);
    Returns 0 if not, 1 if yes. */
 char is_valid_character(char c);
 
-/* Finds the starting index for the next word. */
-int find_word_start(char* str);
+/* Finds the next word in the string. 
+   For example, given an input of "  my cake" the function
+   should return "my cake". */
+char* find_word_start(char* str);
 
-/* Finds the end index for the next word. */
-int find_word_end(char* str);
+/* Finds the end of current word.
+   For example, given an input of "my cake" the function
+   should return " cake". */
+char* find_word_end(char* str);
 
 /* Counts the number of words in the string argument. */
 int count_words(char* str);
-
-/* Prints all tokens. */
-void print_tokens(char** tokens);
-
-/* Frees all tokens and the array containing the tokens. */
-void free_tokens(char** tokens);
 
 /* Tokenizes the string argument into an array of tokens.
    For example, "hello world string" would result in:
@@ -32,5 +30,11 @@ void free_tokens(char** tokens);
      tokens[1] = "world"
      tokens[2] = "string" */
 char** tokenize(char* str);
+
+/* Prints all tokens. */
+void print_tokens(char** tokens);
+
+/* Frees all tokens and the array containing the tokens. */
+void free_tokens(char** tokens);
 
 #endif
