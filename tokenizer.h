@@ -24,6 +24,9 @@ char* find_word_end(char* str);
 /* Counts the number of words in the string argument. */
 int count_words(char* str);
 
+/* Copies the next word in str to copy. */
+void copy_word(char* str, char* copy);
+
 /* Tokenizes the string argument into an array of tokens.
    For example, "hello world string" would result in:
      tokens[0] = "hello"
