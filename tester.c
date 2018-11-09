@@ -20,6 +20,10 @@ int tests_run;
 
 
 /* Tokenizer test cases */
+static char* test_string_length() {
+    mu_assert("string_length('happy') == 5", string_length("happy") == 5);
+    return 0;
+}
 static char* test_is_valid_character() {
     mu_assert("is_valid_character(' ') == 0", is_valid_character(' ') == 0);
     mu_assert("is_valid_character('h') == 1", is_valid_character('h') == 1);
@@ -75,6 +79,7 @@ static char* test_get_history() {
 
 static char* all_tests() {
     if (TEST_TOKENIZER) {
+        mu_run_test(test_string_length);
         mu_run_test(test_is_valid_character);
         mu_run_test(test_find_word_start);
         mu_run_test(test_find_word_end);
