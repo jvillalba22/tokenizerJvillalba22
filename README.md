@@ -127,4 +127,4 @@ Overall, a user should be able to:
 1. view the history of strings entered by the user 
 2. and recall a certain history item by using the command `!3` (i.e. an exclamation directly followed by the sequence number).
 
-You should define each function inside the **history.h** header file and then incorporate the history with your tokenizer and interface.
+You should define each function from the **history.h** header file in a separate history.c file and then incorporate the history with your tokenizer and interface.
