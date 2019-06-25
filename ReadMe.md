@@ -1,6 +1,6 @@
 # **Lab Project 1: BULDING A TOKENIZER**  <h1>
 
-***SimpleUI***
+# ***SimpleUI*** <h2>
 
 SimpleUI is just a simple interface that reads what the user writes and then
 printed ultil the input is empty.
@@ -16,7 +16,7 @@ all is inside a loop  that when it reads '\0' it stop
  >User Enter Here
 
 
-***Tokenizer***
+# ***Tokenizer*** <h2>
 
 
 .c cointains the function with all the work.
