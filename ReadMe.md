@@ -47,7 +47,19 @@ First 5 methods are workig with strings
 	Find the end of the current word -- Meaning erase first word of sring
 	or look for first not valid and erase everyting before that.
 	I have a loop that itenerate ultil '\0' and add to cunter unless a not
-	valid is found then out of loop and add that to the string.
+	valid is found then out of loop and add that to the string.	
+
+   **count_words**
+   	It is a straigh foward funtions that count the words in the string given.
+	Clearly I am using a counter and a loop until string is empty. I use the 	help of find_word start and end. for example the string is My name, first 	loop will just leave " name" and count = 1 then next loop will leave string 	empty and count = 2 then out of loop.
+
+The next two methods are the first ones to deal with Memory Allocation.
+
+   **print_tokens**
+   	This function will hace as parameter char** tokens. I understand this double ** pointer as a 2D array. The function just have a loop and print each token.
+   **free_tokens**
+   	This function just leave tokens empty. So loop 
+	
 
 
 
