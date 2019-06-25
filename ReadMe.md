@@ -11,8 +11,8 @@ all is inside a loop  that when it reads '\0' it stop
     c[0].May be because it takes the enter as an space (space != '\0') so it
     keeps going.
  Ex:
-  > User Enter here
- User Enter Here
+  > $User Enter here
+ >User Enter Here
 
 
 Tokenizer
