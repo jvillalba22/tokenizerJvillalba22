@@ -12,6 +12,7 @@ all is inside a loop  that when it reads '\0' it stop
     keeps going.
  Ex:
   > $User Enter here
+ 
  >User Enter Here
 
 
