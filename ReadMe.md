@@ -1,4 +1,4 @@
-#**Lab Project 1: BULDING A TOKENIZER**#
+##Lab Project 1: BULDING A TOKENIZER##
 
 ***SimpleUI***
 
