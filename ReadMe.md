@@ -23,7 +23,8 @@ all is inside a loop  that when it reads '\0' it stop
 .h just declare the functions.
 
 First 5 methods are workig with strings
-    **string_length**
+   
+   **string_length**
 	The method have to count the characters in the string.
 	First there is a counter then a loop that it stops when char[counter]
       == '\0' then the counter is return.
