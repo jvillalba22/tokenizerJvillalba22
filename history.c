@@ -8,10 +8,39 @@ Maintaining history
 #include <stdlib.h>
 #include "history.h"
 
+
+int main(){
+  //init list and creating memory to it 
+  List* t = malloc(sizeof(List));
+  printf("Creating List..\n");
+  // adding and printing working
+  add_history(t, "Test Tokenizer");
+  add_history(t, "Jennifer Villalba Leal");
+  add_history(t, "Lab   number one   is");
+  add_history(t, "sit");
+  print_history(t);
+
+  // NULL Do not stop the loop but all the history is is save it 
+  printf("Trying get\n");
+  char* s;
+  int i = 1;
+  while(t != NULL && i < 6){
+  s = get_history(t,i);
+  printf("GET id %d - %s\n", i, s);
+  i++;
+  }
+
+  //
+  printf("Try Clean History\n");
+  free_history(t);
+  print_history(t);
+
+}
+
 /* Initialize the linked list to keep the history. */
 List* init_history(){
   List* head = (List*)malloc(sizeof(List));
-  head-)root = NULL;
+  head->root = NULL;
   return head;
 }
 
@@ -30,7 +59,7 @@ void add_history(List* list, char* str){
 
   new ->str = str;
   new->id = 1;
-  neww->next = NULL;
+  new->next = NULL;
 
   //add first node if is empty
   if(current->root == NULL){
@@ -38,15 +67,15 @@ void add_history(List* list, char* str){
     return;
   }
 
-  newTemp = currnet->root;
+  newTemp = current->root;
   //itenerate
-  while(newwTemp->next != NULL){
+  while(newTemp->next != NULL){
     i++;
     newTemp = newTemp->next;
   }
   i++;
   newTemp->next = new;
-  new-> = i;
+  new->id = i;
   return;
 }
 
@@ -73,7 +102,7 @@ void print_history(List* list){
   current = &c;
 
   if(current->root  == NULL){
-    printf("The List is Empty!!!!!!!!!!!");
+    printf("The List is Empty!!!!!!!!!\n");
     return;
   }
 
