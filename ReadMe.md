@@ -1,6 +1,6 @@
-Lab Project 1: BULDING A TOKENIZER
+**Lab Project 1: BULDING A TOKENIZER
 
-SimpleUI
+***SimpleUI
 
 SimpleUI is just a simple interface that reads what the user writes and then
 printed ultil the input is empty.
@@ -16,25 +16,25 @@ all is inside a loop  that when it reads '\0' it stop
  >User Enter Here
 
 
-Tokenizer
+***Tokenizer
 
 
 .c cointains the function with all the work.
 .h just declare the functions.
 
 First 5 methods are workig with strings
-      string_length
+    **string_length**
 	The method have to count the characters in the string.
 	First there is a counter then a loop that it stops when char[counter]
       == '\0' then the counter is return.
 
 
-      is_valid_character
+   **is_valid_character**
         it just check is c it between the ASCII numbers 33-126 if it is then
         is valid and return 1. Otherwise 0.
 
 
-      find_word_start
+   **find_word_start**
 	Finds the next word in the string -- Meaning it look for not valid
 	chars at the beggining of the string and will return the strings from
 	the first valid to last of string.
@@ -42,7 +42,7 @@ First 5 methods are workig with strings
 	string.
 
 
-     find_word_end
+   **find_word_end**
 	Find the end of the current word -- Meaning erase first word of sring
 	or look for first not valid and erase everyting before that.
 	I have a loop that itenerate ultil '\0' and add to cunter unless a not
