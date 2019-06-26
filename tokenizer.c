@@ -10,7 +10,7 @@ all methods dome and tested
 #include <stdlib.h>
 #include "tokenizer.h"
 
-
+/*
 int main(){
  
   char* input = malloc(100 *sizeof *input);
@@ -32,7 +32,7 @@ int string_length(char* str){
     c++;
   }
   return c;
-}
+} 
 
 /* Evaluates if the character c is an acceptable character for
    a token. Acceptable characters include any alphanumeric or

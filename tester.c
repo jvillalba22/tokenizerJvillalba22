@@ -1,7 +1,8 @@
+
 #include <string.h>
 #include <stdio.h>
-#include "tokenizer.h"
-#include "history.h"
+#include "tokenizer.c" // tokenizer.h 
+#include "history.c"
 
 /*
     The following is a simple testing script with a single example of input
@@ -59,7 +60,7 @@ static char* test_tokenize() {
     return 0;
 }
 
-/* History test cases */
+/* History test cases  */
 static char* test_add_history() {
     List* list = init_history();
     add_history(list, "happy");
@@ -84,18 +85,18 @@ static char* all_tests() {
         mu_run_test(test_find_word_start);
         mu_run_test(test_find_word_end);
         mu_run_test(test_count_words);
-        mu_run_test(test_tokenize);
+        mu_run_test(test_tokenize); 
     }
-
+   
     if (TEST_HISTORY) {
         mu_run_test(test_add_history);
         mu_run_test(test_get_history);
-    }
+	} 
 
     return 0;
 }
 
- int main(int argc, char **argv) {   
+int main(int argc, char **argv) {   
     char *result = all_tests();
 
     if (result != 0) 

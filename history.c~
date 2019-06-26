@@ -1,0 +1,52 @@
+/*
+Jennifer Villalba -- Tokenizer/History 
+Maintaining history 
+06/21/2019
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "history.h"
+
+/* Initialize the linked list to keep the history. */
+List* init_history(){
+  List* head = (List*)malloc(sizeof(List));
+  head-)root = NULL;
+  return head;
+}
+
+
+/* Add a history item to the end of the list.
+   List* list - the linked list
+   char* str - the string to store
+*/
+void add_history(List* list, char* str){
+  List* current = list;
+
+  // counter for the id of the new item
+  int i = 1;
+  Item* new = (Item*) malloc(sizeof(new)); // memory for the new item to be added it on the list
+  Item* newTemp = (Item*) malloc(sizeof(newTemp)); //tmep for the new item
+
+  new ->str = str;
+  new->id = 1;
+  neww->next = NULL;
+
+  //add first node if is empty
+  if(current->root == NULL){
+    current->root = new;
+    return;
+  }
+
+  newTemp = currnet->root;
+  //itenerate
+  while(newwTemp->next != NULL){
+    i++;
+    newTemp = newTemp->next;
+  }
+  i++;
+  newTemp->next = new;
+  new-> = i;
+  return;
+}
+

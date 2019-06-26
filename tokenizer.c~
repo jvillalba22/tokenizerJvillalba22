@@ -1,0 +1,50 @@
+/*
+TOkenizer Lab 1
+Jennifer Villalba
+Summer 2019
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "tokenizer.h"
+
+main int(){
+
+}
+
+
+/* Counts the number of characters in the string argument. */
+int string_length(char* str){
+  int c = 0; // counter
+  while(str[c] != '\0'){ //while char is not empty
+    c++;
+  }
+  return c;
+}
+
+/* Evaluates if the character c is an acceptable character for
+   a token. Acceptable characters include any alphanumeric or
+   special character. Unacceptable characters include any
+   whitespace or control characters.
+   Returns 0 if not, 1 if yes. */
+char is_valid_character(char c){
+  // A
+  if(c >= 33 && c <= 126)
+    return 1;
+  return 0;
+}
+
+/* Finds the next word in the string. 
+   For example, given an input of "  my cake" the function
+   should return "my cake". */
+char* find_word_start(char* str){
+  int c;
+  while(!is_valid_character(str[i]){
+      ++i;  
+   }
+    return str;
+}
+
+
+
+

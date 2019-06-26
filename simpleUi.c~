@@ -1,0 +1,23 @@
+/*
+Jennifer Villalba 
+Summer 2019
+06/13/2019
+Simple UI
+User interdace 
+*/
+
+#include <stdio.h>
+
+int main(){
+  int i =0;
+  char c[100];
+
+  printf(">");
+  fgets(c, sizeof(c), stdin);
+  while(c[1] != '\0' && i < 10){
+      printf("%s", c);
+      printf(">");
+      fgets(c, sizeof(c), stdin);
+      i++;
+    }
+}

@@ -1,0 +1,81 @@
+student@arch1:~/tokenizer-jvillalba22-1> ./a.out
+>hola
+Input --- 
+student@arch1:~/tokenizer-jvillalba22-1> ./a.out
+>hola
+Input --- 
+student@arch1:~/tokenizer-jvillalba22-1> ./a.out
+>hola
+Input --- 
+student@arch1:~/tokenizer-jvillalba22-1> ./a.out
+>hola
+Input --- 
+student@arch1:~/tokenizer-jvillalba22-1> ./a.out
+>hola
+Input --- hola
+ 
+student@arch1:~/tokenizer-jvillalba22-1> ./a.out
+>hola bebe
+Input --- hola be 
+student@arch1:~/tokenizer-jvillalba22-1> 
+student@arch1:~/tokenizer-jvillalba22-1> ./a.out
+>hola bebebe
+Input --- hola be 
+student@arch1:~/tokenizer-jvillalba22-1> ./.aout
+bash: ./.aout: No such file or directory
+student@arch1:~/tokenizer-jvillalba22-1> ./a.out
+>hola bebe caca
+Input --- hola be 
+student@arch1:~/tokenizer-jvillalba22-1> ./a.out
+>hola jennifer
+Segmentation fault (core dumped)
+student@arch1:~/tokenizer-jvillalba22-1> ./a.out 
+>hola como
+Segmentation fault (core dumped)
+student@arch1:~/tokenizer-jvillalba22-1> ./a.out
+>hola
+Input --- hola
+ 
+student@arch1:~/tokenizer-jvillalba22-1> 
+student@arch1:~/tokenizer-jvillalba22-1> ./a.out
+>hola jennifer
+Input --- hola jennifer
+ 
+student@arch1:~/tokenizer-jvillalba22-1> ./a.out
+>hola hola    jennifer
+Input --- hola hola    jennifer
+ 
+student@arch1:~/tokenizer-jvillalba22-1> ./a.out
+>hola jennifer villalba
+Input --- hola jennifer villalba
+ 
+student@arch1:~/tokenizer-jvillalba22-1> ./a.out
+>jennifer villalba
+Input --- jennifer villalba
+ 
+tokens[0] = jennifer 
+tokens[1] = villalba 
+tokens[2] = u 
+tokens[3] = % 
+tokens[4] = h 
+tokens[5] = 4 
+tokens[6] = @ 
+student@arch1:~/tokenizer-jvillalba22-1> ./a.out
+>jennifer villalba
+Segmentation fault (core dumped)
+student@arch1:~/tokenizer-jvillalba22-1> ./a.out
+>jennifer villalba
+Input --- jennifer villalba
+ 
+tokens[0] = jennifer 
+tokens[1] = villalba 
+tokens[2] = 5 
+student@arch1:~/tokenizer-jvillalba22-1> ./a.out
+>jennifer villlalba
+Input --- jennifer villlalba
+ 
+tokens[0] = jennifer 
+tokens[1] = villlalba 
+tokens[2] = %- 
+tokens[3] = @ 
+student@arch1:~/tokenizer-jvillalba22-1> 

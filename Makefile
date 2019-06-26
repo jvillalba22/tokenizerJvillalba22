@@ -1,5 +1,5 @@
 all: build clean
-CFLGAS=-g -O3
+CFLAGS=-g -O3
 
 build: interface.o tokenizer.o history.o
 	cc -o $@ $^

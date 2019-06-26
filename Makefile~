@@ -1,0 +1,17 @@
+
+
+interface: interface.o tokenizer.o history.o
+	cc -o $@ $^
+
+interface.o: interface.o
+	cc -c $(cFLAGS) interface.c
+
+tokenizer.o: tokenizer.cc tokenizer.h
+	cc -c $(cFLAGS) tokenizer.c
+
+history.o: history.c history.h
+	cc -c $(cFLAGS) history.c
+
+clean:
+	rm -f *.o interface
+

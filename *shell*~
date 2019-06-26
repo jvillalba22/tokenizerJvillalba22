@@ -1,0 +1,84 @@
+student@arch1:~/tokenizer-jvillalba22-1> ./a.out
+Try 1 function - Jennifer length 8 
+ isValid Function work for true!! 
+Is valid Func. work for false 
+Try f_w_s with string '   my cake' 
+my cake
+Test end string with 'happy joy
+ joy
+Test count words 'Jennifer happy  happy joy
+Segmentation fault (core dumped)
+student@arch1:~/tokenizer-jvillalba22-1> 
+student@arch1:~/tokenizer-jvillalba22-1> ./a.out
+Try 1 function - Jennifer length 8 
+ isValid Function work for true!! 
+Is valid Func. work for false 
+Try f_w_s with string '   my cake' 
+my cake
+Test end string with 'happy joy
+ joy
+Test count words 'Jennifer happy  happy joy
+5 , words
+student@arch1:~/tokenizer-jvillalba22-1> ./a.out
+Try 1 function - Jennifer length 8 
+ isValid Function work for true!! 
+Is valid Func. work for false 
+Try f_w_s with string '   my cake' 
+my cake
+Test end string with 'happy joy
+ joy
+Test count words 'Jennifer happy  happy joy
+Segmentation fault (core dumped)
+student@arch1:~/tokenizer-jvillalba22-1> 
+student@arch1:~/tokenizer-jvillalba22-1> ./a.out
+Try 1 function - Jennifer length 8 
+ isValid Function work for true!! 
+Is valid Func. work for false 
+Try f_w_s with string '   my cake' 
+my cake
+Test end string with 'happy joy
+ joy
+Test count words 'Jennifer happy  happy joy
+Segmentation fault (core dumped)
+student@arch1:~/tokenizer-jvillalba22-1> 
+student@arch1:~/tokenizer-jvillalba22-1> ./a.out
+Try 1 function - Jennifer length 8 
+ isValid Function work for true!! 
+Is valid Func. work for false 
+Try f_w_s with string '   my cake' 
+my cake
+Test end string with 'happy joy
+ joy
+Test count words 'Jennifer happy  happy joy
+Segmentation fault (core dumped)
+student@arch1:~/tokenizer-jvillalba22-1> ./a.out
+Try 1 function - Jennifer length 8 
+ isValid Function work for true!! 
+Is valid Func. work for false 
+Try f_w_s with string '   my cake' 
+my cake
+Test end string with 'happy joy
+ joy
+Test count words 'Jennifer happy  happy joy
+Segmentation fault (core dumped)
+student@arch1:~/tokenizer-jvillalba22-1> ./a.out
+Try 1 function - Jennifer length 8 
+ isValid Function work for true!! 
+Is valid Func. work for false 
+Try f_w_s with string '   my cake' 
+my cake
+Test end string with 'happy joy
+ joy
+Test count words 'Jennifer happy  happy joy
+5 , words
+student@arch1:~/tokenizer-jvillalba22-1> ./a.out
+Try 1 function - Jennifer length 8 
+ isValid Function work for true!! 
+Is valid Func. work for false 
+Try f_w_s with string '   my cake' 
+my cake
+Test end string with 'happy joy
+ joy
+Test count words 'Jennifer happy  happy joy
+Segmentation fault (core dumped)
+student@arch1:~/tokenizer-jvillalba22-1> 
