@@ -1,21 +1,5 @@
-o nonkmom
 
 
+int main(){
 
-
-fgeardc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-aedawv
+}
