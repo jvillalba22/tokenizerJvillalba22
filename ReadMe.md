@@ -67,6 +67,20 @@ The next two methods are the first ones to deal with Memory Allocation.
    * **copy_word**
    	This function is helping tokenize to copy the current word (in the loop on the function above) and copy it on the corresponding token.
 	
+# ***History*** <h2>
+	This part of the project is a basic linked list that will make a list of strings. 
+	* **add_history**
+	* **get_history**
+	* **print_history**
+	* **free_history**
+	
+# ***Interface*** <h2>
+	I am using this code to put all together.  The simpleUi to read the inputs from the user. Then everytging should be added on history. Then I use print history to show what the user input on the list. Then we get history I get a certain strign on the list.  
+	
+	> The example shloud be that the use can input as many strings and they should be added to the history and it would stop with a symbol like !# the # is the string to get. However there is a problem somewhere and is just getting save the last string on all the list.
+	
+	when I get the string I use tokenizer to tokenize the word. Then at the end free the list again.
+	
 
 
 
