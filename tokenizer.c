@@ -1,4 +1,3 @@
-
 /*
 Tokenizer Lab 1
 Jennifer Villalba
@@ -13,23 +12,19 @@ all methods dome and tested
 
 
 int main(){
-   char input[100]; //Strings do not exist on C so create a arrar of char
-  //char* input = malloc(100 *sizeof *input); 
-  printf(">");
-  fgets(input, sizeof(input), stdin);
-  char* in = malloc(sizeof(char) * (count_words(input) + 1));
-  in = input;
-
+ 
+  char* input = malloc(100 *sizeof *input);
+  printf("> \n");
+  scanf("%[^\n]s", input); // read string until user psuh enter
+  //char* in = malloc(sizeof(char) * (count_words(input) + 1));
+  //in = input;
   char** x;
   printf("Input --- %s \n", input);
-  x = tokenize(in);
+  x = tokenize(input);
   print_tokens(x);
-  free(input);
-  
-  
+  free(input); 
 } 
  
-
 /* Counts the number of characters in the string argument. */
 int string_length(char* str){
   int c = 0; // counter
@@ -46,7 +41,7 @@ int string_length(char* str){
    Returns 0 if not, 1 if yes. */
 char is_valid_character(char c){
   // just have this in a variable
-  //char val;
+  //char val; !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   if(c >= 33 && c <= 126)
     return  1;
   return  0;
@@ -71,7 +66,7 @@ char* find_word_end(char* str){
   //  str = find_word_start(str) ; //!!!!!!!!!!
   while(str[c] != '\0'){
     //need to find first invalid char and erase everything before it
-    if(!is_valid_character(str[c])) {//if(str[c] == ' '){
+    if(!is_valid_character(str[c])) {//if(str[c] == ' '){ /// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
       goto jump; // end loop here
     }
     c++;
@@ -109,8 +104,6 @@ void copy_word(char* str, char* copy) {
   }
 
 }
-
-
 /* Tokenizes the string argument into an array of tokens. 
    For example, "hello world string" would result in:
      tokens[0] = "hello"
@@ -118,7 +111,7 @@ void copy_word(char* str, char* copy) {
      tokens[2] = "string" */
 char** tokenize(char* str) {
   //count the words
-  int words = count_words(str);
+  int words = count_words(str); //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   // Create memory "it ssould be like a 2D array"
   char** tokens = (char**) malloc(sizeof(char*) *(words +1)); // need to create memoy for each of the words on the strings
   int c = 0; // counnter to go thorugh every word/token
@@ -156,4 +149,3 @@ void free_tokens(char** tokens){
   }
   return;   
 }
-
