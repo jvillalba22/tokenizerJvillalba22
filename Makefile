@@ -1,6 +1,7 @@
+all: build clean
+CFLGAS=-g -O3
 
-
-interface: interface.o tokenizer.o history.o
+build: interface.o tokenizer.o history.o
 	cc -o $@ $^
 
 interface.o: interface.c
@@ -13,5 +14,5 @@ history.o: history.c history.h
 	cc -c $(cFLAGS) history.c
 
 clean:
-	rm -f *.o interface
+	rm -f *.o build
 
