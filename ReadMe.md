@@ -70,10 +70,15 @@ The next two methods are the first ones to deal with Memory Allocation.
 # ***History*** <h2>
 
 This part of the project is a basic linked list that will make a list of strings. 
-	*   **add_history**
-	*   **get_history**
-	*   **print_history**
-	*   **free_history**
+		
+		*   **add_history**
+			
+		*   **get_history**
+		
+		*   **print_history**
+		
+		*   **free_history**
+		
 	
 # ***Interface*** <h2>
 	
